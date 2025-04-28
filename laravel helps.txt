@@ -1,0 +1,10 @@
+- DBFORGE: sql import
+- .env -> adatbázis neve
+- php artisan migrate 
+- modellek létrehozása: php artisan make:model
+    - jellemzők beállítása ($primaryKey, $table, public $timestamps, $guarded)
+    - kapcsolat metódusok (belongsTo, hasMany, hasOne)
+- contorller létrehozása: php artisan make:controller DataController
+- api.php -> összes route létrehozása: Pl.:
+    Route::get('/get-all-universities', [DataController::class, 'getAllUniversities']);
+- DataController: metódusok létrehozása
